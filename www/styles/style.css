@@ -1,0 +1,166 @@
+#times {
+    color:#1E90FF;
+    border-width: 3px;
+    border-color: #4B0082;
+    font: bold Sans-serif;
+    font-size:50pt;
+    text-align:center;
+    text-shadow: #4B0082 2px 2px 0, #4B0082 -2px -2px 0, 
+                 #4B0082 -2px 2px 0, #4B0082 2px -2px 0;
+}
+
+#cprt {
+    font: bold Sans-serif;
+    font-size:25pt;
+    color:#ffff00;
+    text-align:center;
+    text-shadow: #4B0082 2px 2px 0, #4B0082 -2px -2px 0, 
+                 #4B0082 -2px 2px 0, #4B0082 2px -2px 0;
+}
+
+#myCanvas{
+	transition: all 3.0s ease;
+}
+
+.L_SPIN {
+    animation-name: lspin;
+    -webkit-animation-name: lspin;
+    animation-duration: 600ms;
+    -webkit-animation-duration: 5.0s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    z-index: 100;
+}
+ 
+@keyframes lspin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes lspin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    }
+}
+
+.R_SPIN {
+    animation-name: spin;
+    -webkit-animation-name: spin;
+    animation-duration: 600ms;
+    -webkit-animation-duration: 5.0s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+    z-index: 100;
+}
+ 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.jumping {
+	animation-name: showanim;
+	-webkit-animation-name: showanim; 
+	animation-duration: 5.0s; 
+	-webkit-animation-duration: 5.0s;
+	animation-timing-function: ease-out; 
+	-webkit-animation-timing-function: ease-out; 
+	visibility: visible !important;
+}
+
+
+@keyframes showanim { 
+    0%{transform: scaleY(.98);}
+    10%{transform:translate(0,-100px) scaleY(1.02);}
+    20%{transform:translate(0,5px) scaleY(.98);}
+    30%{transform:translate(0,-80px)  scaleY(1.02);}
+    40%{transform:translate(0,5px)  scaleY(.98);}
+    50%{transform:translate(0,-60px)  scaleY(1.02);}
+    60%{transform:translate(0,5px)  scaleY(.98);}
+    70%{transform:translate(0,-40px)  scaleY(1.02);}
+    80%{transform:translate(0,5px)  scaleY(.98);}
+    90%{transform:translate(0,-20px)  scaleY(1.02);}
+    100%{transform:translate(0,5px);  }
+}
+
+@-webkit-keyframes showanim {
+    0%{transform: scaleY(.98);}
+    10%{transform:translate(0,-100px) scaleY(1.02);}
+    20%{transform:translate(0,5px) scaleY(.98);}
+    30%{transform:translate(0,-80px)  scaleY(1.02);}
+    40%{transform:translate(0,5px)  scaleY(.98);}
+    50%{transform:translate(0,-60px)  scaleY(1.02);}
+    60%{transform:translate(0,5px)  scaleY(.98);}
+    70%{transform:translate(0,-40px)  scaleY(1.02);}
+    80%{transform:translate(0,5px)  scaleY(.98);}
+    90%{transform:translate(0,-20px)  scaleY(1.02);}
+    100%{transform:translate(0,5px);  }
+}
+
+.repeat {
+	animation-name: repeatanim;
+	-webkit-animation-name: repeatanim; 
+	animation-duration: 5.0s; 
+	-webkit-animation-duration: 5.0s;
+	animation-timing-function: ease-out; 
+	-webkit-animation-timing-function: ease-out; 
+	visibility: visible !important;
+}
+
+
+@keyframes repeatanim { 
+    0%{transform: scaleY(.98);}
+    10%{transform:translate(0,-100px) scaleY(1.02);}
+    20%{transform:translate(0,5px) scaleY(.98);}
+    30%{transform:translate(0,-80px)  scaleY(1.02);}
+    40%{transform:translate(0,5px)  scaleY(.98);}
+    50%{transform:translate(0,-60px)  scaleY(1.02);}
+    60%{transform:translate(0,5px)  scaleY(.98);}
+    70%{transform:translate(0,-40px)  scaleY(1.02);}
+    80%{transform:translate(0,5px)  scaleY(.98);}
+    90%{transform:translate(0,-20px)  scaleY(1.02);}
+    100%{transform:translate(0,5px);  }
+}
+
+@-webkit-keyframes repeatanim {
+    0%{transform: scaleY(.98);}
+    10%{transform:translate(0,-100px) scaleY(1.02);}
+    20%{transform:translate(0,5px) scaleY(.98);}
+    30%{transform:translate(0,-80px)  scaleY(1.02);}
+    40%{transform:translate(0,5px)  scaleY(.98);}
+    50%{transform:translate(0,-60px)  scaleY(1.02);}
+    60%{transform:translate(0,5px)  scaleY(.98);}
+    70%{transform:translate(0,-40px)  scaleY(1.02);}
+    80%{transform:translate(0,5px)  scaleY(.98);}
+    90%{transform:translate(0,-20px)  scaleY(1.02);}
+    100%{transform:translate(0,5px);  }
+}
+
+ 
+body {
+    background-color:#ADD8E6;
+}
